@@ -23,13 +23,15 @@ npm i react-icons react-redux @reduxjs/toolkit react-router react-router-dom rea
 
 edit the package like that,
 "scripts": {
-"fullstack": "concurrently \"npm run backend\" \"npm run frontend\"",
+"dev": "concurrently \"npm run backend\" \"npm run frontend\"",
 "frontend": "cd frontend && npm run dev",
 "backend": "nodemon backend/index.js"
 },
 
 then if you want to run frontend then , npm run frontend
 and backend, npm run backend
+
+you need run both then npm run dev
 
 ok , cd backend
 create several folders as ,
@@ -39,3 +41,8 @@ create several folders as ,
 04.routes
 05.utils
 and index.js
+
+inside the config create connection of database
+db.js
+
+after fronend install the tailwind css with vite you can refer the tailwincss
