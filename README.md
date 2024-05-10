@@ -49,3 +49,9 @@ after fronend install the tailwind css with vite you can refer the tailwincss
 
 Register Page
 ![alt text](image.png)
+
+After regitered
+![alt text](<Screenshot 2024-05-10 135440.png>)
+
+Cookies generated
+![alt text](<Screenshot 2024-05-10 135628.png>)
