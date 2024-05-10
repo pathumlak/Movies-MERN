@@ -64,3 +64,18 @@ logout
 
 update profile
 ![alt text](./screenshots/image-4.png)
+
+Genres backend
+
+<!-- specific -->
+
+![alt text](screenshots/specific.png)
+
+create genre
+![alt text](screenshots/creategenre.png)
+
+update genre
+![alt text](screenshots/update.png)
+
+Delete genre
+![alt text](screenshots/delete.png)
