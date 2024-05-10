@@ -48,12 +48,12 @@ const Register = () => {
   };
 
   return (
-    <div className="pl-[10rem] flex flex-wrap">
-      <div className="mr-[4rem] mt-[5rem]">
+    <div className="flex flex-wrap">
+      <div className="w-full md:w-1/2 p-6">
         <h1 className="text-2xl font-semibold mb-4">Register</h1>
 
-        <form onSubmit={submitHandler} className="container w-[40rem]">
-          <div className="my=[2rem]">
+        <form onSubmit={submitHandler} className="w-full">
+          <div className="my-2">
             <label
               htmlFor="name"
               className="block text-sm font-medium text-white"
@@ -69,7 +69,7 @@ const Register = () => {
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          <div className="my-[2rem]">
+          <div className="my-2">
             <label
               htmlFor="email"
               className="block text-sm font-medium text-white"
@@ -85,7 +85,7 @@ const Register = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div className="my-[2rem]">
+          <div className="my-2">
             <label
               htmlFor="password"
               className="block text-sm font-medium text-white"
@@ -101,7 +101,7 @@ const Register = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div className="my-[2rem]">
+          <div className="my-2">
             <label
               htmlFor="confirmPassword"
               className="block text-sm font-medium text-white"
@@ -120,7 +120,7 @@ const Register = () => {
           <button
             disabled={isLoading}
             type="submit"
-            className="bg-teal-500 text-white px-4 py-2 rounded cursor-pointer my-[1rem]"
+            className="bg-teal-500 text-white px-4 py-2 rounded cursor-pointer my-4"
           >
             {isLoading ? "Registering..." : "Register"}
           </button>
@@ -138,10 +138,12 @@ const Register = () => {
             </Link>
           </p>
         </div>
+      </div>
+      <div className="w-full md:w-1/2">
         <img
           src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          className="h-[65rem] w-[55%] xl:block md:hidden sm:hidden rounded-lg"
+          className="h-auto md:h-full w-full object-cover"
         />
       </div>
     </div>
