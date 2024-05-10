@@ -48,16 +48,19 @@ db.js
 after fronend install the tailwind css with vite you can refer the tailwincss
 
 Register Page
-![alt text](image.png)
+![alt text](./screenshots/image-1.png)
 
 After regitered
-![alt text](<Screenshot 2024-05-10 135440.png>)
+![alt text](<./screenshots/Screenshot 2024-05-10 135440.png>)
 
 Cookies generated
-![alt text](<Screenshot 2024-05-10 135628.png>)
+![alt text](<./screenshots/Screenshot 2024-05-10 135628.png>)
 
 login page
-![alt text](image-1.png)
+![alt text](./screenshots/image-1.png)
 
 logout
-![alt text](image-2.png)
+![alt text](./screenshots/image-2.png)
+
+update profile
+![alt text](./screenshots/image-4.png)
