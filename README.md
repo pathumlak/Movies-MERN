@@ -55,3 +55,9 @@ After regitered
 
 Cookies generated
 ![alt text](<Screenshot 2024-05-10 135628.png>)
+
+login page
+![alt text](image-1.png)
+
+logout
+![alt text](image-2.png)

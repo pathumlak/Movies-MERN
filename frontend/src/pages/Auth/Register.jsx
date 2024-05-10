@@ -29,17 +29,15 @@ const Register = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+
     if (password !== confirmPassword) {
-      toast.error("Password do not Match");
+      toast.error("Password do not match");
     } else {
       try {
-        const res = await register({
-          username,
-          email,
-          password,
-        }).unwrap();
+        const res = await register({ username, email, password }).unwrap();
         dispatch(setCredentials({ ...res }));
-        toast.success("User Successfully Added!");
+        navigate(redirect);
+        toast.success("User successfully registered.");
       } catch (err) {
         console.log(err);
         toast.error(err.data.message);
