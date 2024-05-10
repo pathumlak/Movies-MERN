@@ -46,3 +46,6 @@ inside the config create connection of database
 db.js
 
 after fronend install the tailwind css with vite you can refer the tailwincss
+
+Register Page
+![alt text](image.png)
