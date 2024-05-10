@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 //utiles
 import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
+import genreRoutes from "./routes/genreRoutes.js";
 
 dotenv.config();
 
@@ -21,5 +22,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/genre", genreRoutes);
 
 app.listen(port, () => console.log(`server running on ${port} port`));
