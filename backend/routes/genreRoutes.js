@@ -1,12 +1,11 @@
 import express from "express";
-
 const router = express.Router();
 
 // Controllers
 import {
   createGenre,
   updateGenre,
-  deleteGenre,
+  removeGenre,
   listGenres,
   readGenre,
 } from "../controllers/genreControllers.js";
@@ -15,11 +14,14 @@ import {
 import {
   authenticate,
   authorizedAdmin,
-} from "../middlewares/authMiddleware.js"; // Corrected import statement
+} from "../middlewares/authMiddleware.js";
+
 router.route("/").post(authenticate, authorizedAdmin, createGenre);
 router.route("/:id").put(authenticate, authorizedAdmin, updateGenre);
-router.route("/:id").delete(authenticate, authorizedAdmin, deleteGenre);
-router.route("/all").get(listGenres);
-router.route("/:id").get(readGenre);
+router.route("/:id").delete(authenticate, authorizedAdmin, removeGenre);
+
+// Corrected order of routes
+router.route("/genres").get(listGenres); // Moved up
+router.route("/:id").get(readGenre); // Moved down
 
 export default router;

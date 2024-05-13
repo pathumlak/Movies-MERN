@@ -39,7 +39,7 @@ const updateGenre = asyncHandler(async (req, res) => {
   }
 });
 
-const deleteGenre = asyncHandler(async (req, res) => {
+const removeGenre = asyncHandler(async (req, res) => {
   try {
     const { id } = req.params;
 
@@ -72,4 +72,4 @@ const readGenre = asyncHandler(async (req, res) => {
     return res.status(400).json(error.message);
   }
 });
-export { createGenre, updateGenre, deleteGenre, listGenres, readGenre };
+export { createGenre, updateGenre, removeGenre, listGenres, readGenre };
